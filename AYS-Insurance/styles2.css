@@ -1,0 +1,146 @@
+/* General Reset and Base Styling */
+html {
+  margin: 0;
+  padding: 5%;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #343a40; /* Dark gray text */
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  padding-bottom: 25px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+p, li {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin: 10px 10%;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar, .btn-primary {
+  background-color: #0056b3; /* Professional blue */
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar .navbar-brand i {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+a.nav-link {
+  color: #007bff;
+}
+
+a.nav-link:hover {
+  color: #0056b3;
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 -4px 2px -2px gray;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #adb5bd;
+}
+
+/* Flexbox for Cards or Columns */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 1 1 calc(33.333% - 40px);
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #004494;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .flex-item {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar .navbar-brand i {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+}
+
+.offerings {
+  text-align: left;
+}

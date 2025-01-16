@@ -1,0 +1,177 @@
+html {
+  margin: 0;
+  padding: 5%;
+  height: 100%;
+  width: 100%;
+  background-color: #F9F5EB; /* Light gray background for a clean look */
+  color: #343a40; /* Dark gray text for readability */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  font-weight: 600;
+}
+
+p, li {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin: 10px 10%;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.tax {
+  display: block; 
+  margin: 0 auto; 
+  border: 1px solid #ddd; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#AYSLogo {
+  width: 50px;
+  height: 40px;
+}
+
+.navbar, .btn-primary {
+  background-color: #0056b3; /* A professional blue */
+}
+
+a.nav-link {
+  color: #1C3879; /* Consistent link color */
+}
+
+a.nav-link:hover {
+  color: #607EAA;
+}
+
+.navbar {
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.HomeCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.homeImgCard {
+  flex: 1 1 calc(33.333% - 32px);
+  border: 2px solid black;
+  background-color: #1D24CA;
+  height: 200px;
+  min-width: 300px;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 25px auto;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.offerings {
+  background: none;
+  display: block;
+}
+
+#homeHeader {
+  font-size: 40px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #201658, #98ABEE);
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+#imgTag1 {
+  height: 250px;
+  float: right;
+  margin: 30px;
+}
+
+.container {
+  justify-content: center;
+  text-align: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Adjust spacing between items */
+    list-style:disc;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px; /* Adjust as needed */
+    justify-content: center;
+}
+
+.contacts {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 1rem;
+}
+
+.floating-btn {
+  color: #1C3879;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050; /* Ensures it stays above other content */
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.floating-btn:hover {
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+
+form {
+  max-width: 50%;
+  text-align: center;
+}
+
+.dropdown-item {
+  padding: 7px 20px; /* Control spacing inside the items */
+  box-sizing: border-box; /* Ensure padding doesn't affect width calculations */
+  white-space: nowrap; 
+  text-overflow: ellipsis; /* Prevent text wrapping inside the dropdown */
+}
+
+/* Optional: Add text alignment for consistency */
+.dropdown-item {
+  text-align: left; /* Keeps the text aligned to the left */
+}
